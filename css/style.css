@@ -105,7 +105,8 @@ header nav ul li a {
     border: 10px solid black;
     gap: 15px;
 }
-.nosotrosContenedor{
+
+.nosotrosContenedor {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -228,7 +229,7 @@ header nav ul li a {
 
 /*!------NOSOTROS-----*/
 .noso h2 {
-    color:black;
+    color: black;
     background-color: beige;
     text-align: center;
 }
@@ -262,6 +263,15 @@ header nav ul li a {
 }
 
 /*!------FAQS-----*/
+
+.accordion-item{
+    background-color: darkred;
+    color: white;
+}
+.accordion-button{
+    background-color: rgb(182, 182, 159);
+    color: black;
+}
 .preguntasfrecuentes {
     background-image: url(../img/fondo.jpg);
     background-size: cover;
@@ -388,31 +398,88 @@ p::selection {
     color: lightblue;
 }
 
-.nav ul li span{
+.nav ul li span {
     color: rgb(215, 24, 24);
     font-style: italic;
 }
-.nav ul li a:hover{
+
+.nav ul li a:hover {
     background-color: rgb(39, 39, 214);
 }
 
 /*!------MEDIA QUERY-----*/
 
-@media screen and (max-width:865px){
-    header{
+/*!------Index-----*/
+@media screen and (max-width:865px) {
+    header {
         flex-direction: column;
         position: static;
         margin: 0;
     }
-    .hero h3{
+
+    .hero h3 {
         font-size: 15px;
-    }     
+    }
 }
-@media screen and (max-width:560px){
-    header nav ul{
+
+@media screen and (max-width:560px) {
+    header nav ul {
         flex-direction: column;
     }
-    .fixed{
+
+    .fixed {
         display: none;
     }
 }
+@media only screen and (max-width: 420px){
+    body {
+    font-size: 14px;
+    }
+    .bus{
+        display: none;
+    }
+}
+@media screen and (max-width: 410px){
+.bus1{
+    display: none;
+}
+.hero{
+    font-size: 12px;
+}
+}
+
+@media only screen and (max-width: 350px) {
+    body {
+        font-size: 14px;
+    }
+    
+    .header ul {
+        flex-direction: column;
+    }
+
+    .nosotrosContenedor {
+        flex-direction: column;
+    }
+
+    .formulario-cv {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    iframe {
+        width: 100%;
+    }
+}
+/*!------Preguntas Frecuentes-----*/
+@media only screen and (max-width:450px){
+.preguntasfrecuentes h2{
+    font-size: 20px;
+    }
+}
+/*!------Nosotros-----*/
+@media screen and (max-width: 550px){
+.carousel-inner{
+    display: none;
+}
+}
+    
