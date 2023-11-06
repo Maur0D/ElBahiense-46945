@@ -1,0 +1,12 @@
+@media screen and (max-width:865px) {
+    header {
+        flex-direction: column;
+        position: static;
+        margin: 0;
+    }
+}
+@media screen and (max-width:865px){
+    .hero h3 {
+        font-size: 15px;
+    }
+}

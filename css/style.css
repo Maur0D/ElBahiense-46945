@@ -80,6 +80,11 @@ header nav ul li a {
     text-align: center;
     padding: 70px;
     margin: 20px;
+
+}
+
+.hero p span {
+    background-color: black;
 }
 
 .nosotros {
@@ -140,7 +145,11 @@ header nav ul li a {
 }
 
 .contacto {
-    background-image: url("../img/minibus.jpeg")
+    background-image: url("../img/minibus.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
 
 .contacto h2 {
@@ -155,6 +164,7 @@ header nav ul li a {
     color: black;
     text-align: left;
     font-size: 20px;
+    background-color: aliceblue;
 }
 
 .contacto h4 {
@@ -162,6 +172,10 @@ header nav ul li a {
     font-size: 20px;
     text-align: left;
     padding: 15px;
+}
+
+.contacto h4 span {
+    background-color: aliceblue;
 }
 
 .contacto p {
@@ -175,24 +189,42 @@ header nav ul li a {
     height: 30px;
 }
 
-.formulario-cv {
+.contenedorFlex {
     display: flex;
-    flex-wrap: wrap;
-    align-items: center;
+}
+
+.formulario-cv,
+.map {
+    flex: 1;
+}
+
+.formulario-cv {
+    display: block;
+    align-items: start;
     padding: 5px;
     flex-direction: column;
     text-align: center;
 }
 
+.formulario-cv label {
+    display: block;
+    margin-bottom: 5px;
+    color: white;
+    background-color: black;
+}
+
+.formulario-cv input {
+    width: 100%;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    
+}
+.formulario-cv form{
+    max-width: 400px;
+    margin: 0 auto;
+}
+
 .resaltar {
-    background-color: white;
-}
-
-.resalm {
-    background-color: white;
-}
-
-.resa {
     background-color: white;
 }
 
@@ -203,15 +235,23 @@ header nav ul li a {
     background-color: darkgray;
     text-align: center;
 }
+.exp p{
+    color: black;
+    background-color: darkgray;
+    font-style: italic;
+}
 
 .mini {
     background-image: url(../img/minibus.jpeg);
+    background-image: cover;
+    background-repeat: no-repeat;
 }
 
 .fixed {
     position: fixed;
     bottom: 50px;
-    right: 50px;
+    right: 20px;
+    padding: 50px;
 }
 
 .map {
@@ -223,21 +263,17 @@ header nav ul li a {
     text-align: center;
 }
 
-.contactate {
-    background-color: antiquewhite;
-}
-
 /*!------NOSOTROS-----*/
 .noso h2 {
     color: black;
     background-color: beige;
     text-align: center;
+    text-decoration: underline;
 }
 
 .noso h3 {
     color: beige;
     background-color: black;
-
 }
 
 .noso h4 {
@@ -253,7 +289,6 @@ header nav ul li a {
 .noso img {
     width: 200px;
     height: 600px;
-    margin: 9px;
     border: 10px solid black;
     flex-wrap: wrap;
 }
@@ -261,30 +296,37 @@ header nav ul li a {
 .noso {
     background-color: beige;
 }
+.titulos{
+    margin: 40px;
+}
+.parrafo{
+    text-decoration: double;
+    font-style: italic;
+    text-align: center;
+}
 
 /*!------FAQS-----*/
 
-.accordion-item{
-    background-color: darkred;
+.accordion-item {
+    background-image: url(../img/fondo.jpg);
+    background-image: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     color: white;
 }
-.accordion-button{
+
+.accordion-button {
     background-color: rgb(182, 182, 159);
     color: black;
 }
-.preguntasfrecuentes {
-    background-image: url(../img/fondo.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-}
+
 
 .preguntasfrecuentes h2 {
-    color: white;
+    color: black;
     text-align: center;
     font-size: 30px;
-    background-color: darkred;
-    height: 50px;
+    height: 70px;
+    background-color: beige;
 }
 
 .preguntasfrecuentes h3 {
@@ -342,6 +384,7 @@ header nav ul li a {
     background: linear-gradient(to right, darkblue, lightblue);
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
     color: white;
+    font-size: 15px;
 }
 
 .servicio-contenedor div a {
@@ -387,7 +430,13 @@ footer h2 {
 /*!------PSEUDOCLASES-----*/
 
 
-header h1 span {
+header span {
+    color: rgb(215, 24, 24);
+    font-style: italic;
+    font-size: larger;
+}
+
+li::first-letter {
     color: rgb(215, 24, 24);
     font-style: italic;
     font-size: larger;
@@ -404,9 +453,15 @@ p::selection {
 }
 
 .nav ul li a:hover {
-    background-color: rgb(39, 39, 214);
+    background-color: beige;
+    color: black;
 }
-
+.parrafo:hover{
+    background-color: lightblue;
+}
+.servicio-contenedor div a:hover{
+    background-color: beige;
+}
 /*!------MEDIA QUERY-----*/
 
 /*!------Index-----*/
@@ -431,28 +486,32 @@ p::selection {
         display: none;
     }
 }
-@media only screen and (max-width: 420px){
+
+@media only screen and (max-width: 420px) {
     body {
-    font-size: 14px;
+        font-size: 14px;
     }
-    .bus{
+
+    .bus {
         display: none;
     }
 }
-@media screen and (max-width: 410px){
-.bus1{
-    display: none;
-}
-.hero{
-    font-size: 12px;
-}
+
+@media screen and (max-width: 410px) {
+    .bus1 {
+        display: none;
+    }
+
+    .hero {
+        font-size: 12px;
+    }
 }
 
 @media only screen and (max-width: 350px) {
     body {
         font-size: 14px;
     }
-    
+
     .header ul {
         flex-direction: column;
     }
@@ -470,16 +529,70 @@ p::selection {
         width: 100%;
     }
 }
+
 /*!------Preguntas Frecuentes-----*/
-@media only screen and (max-width:450px){
-.preguntasfrecuentes h2{
-    font-size: 20px;
+@media only screen and (max-width:450px) {
+    .preguntasfrecuentes h2 {
+        font-size: 20px;
     }
 }
+
 /*!------Nosotros-----*/
-@media screen and (max-width: 550px){
-.carousel-inner{
-    display: none;
+@media screen and (max-width: 550px) {
+    .carousel-inner {
+        display: none;
+    }
+}
+/*!------Contacto-----*/
+@media screen and (max-width:950px){
+.contenedorFlex{
+    flex-direction: column;
+}
+.mini{
+    background-image: url(../img/minibus.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
 }
-    
+@media screen and (max-width:500px){
+    .formulario-cv textarea{
+    width: 350px;
+    }
+}
+
+/*!------Servicio-----*/
+@media (max-width: 1050px) {
+    .servicio-contenedor {
+        grid-template-columns: repeat(3, 33.3%);
+    }
+    .servicio-contenedor div {
+        width: auto; 
+    }
+}
+@media (max-width: 850px) {
+    .servicio-contenedor {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .servicio-contenedor div {
+        width: auto; 
+    }
+    .tercerItem{
+        display: none;
+    }
+}
+@media (max-width: 550px) {
+    .servicio-contenedor {
+        grid-template-columns: 1fr;
+    }
+
+    .servicio-contenedor div {
+        width: auto; 
+    }
+}
+
+
+
+

@@ -1,0 +1,39 @@
+header {
+    background-color: black;
+    padding: 15px;
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    h1 {
+        height: auto;
+        display: block;
+        padding: 0;
+        color: white;
+
+        span {
+            color: rgb(215, 24, 24);
+            font-style: italic;
+            font-size: larger;
+        }
+
+    }
+
+    nav {
+        ul {
+            list-style: none;
+            display: flex;
+
+            li {
+                a {
+                    text-decoration: none;
+                    color: beige;
+
+                }
+            }
+        }
+
+    }
+}
