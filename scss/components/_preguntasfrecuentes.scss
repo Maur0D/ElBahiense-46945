@@ -1,12 +1,14 @@
 main {
     .preguntasfrecuentes {
         h2{
+        
             color: black;
             text-align: center;
             font-size: 30px;
             height: 70px;
             background-color: beige; 
             text-decoration: underline;
+            
         }
         .accordion-item {
             background-image: url(../img/fondo.jpg);

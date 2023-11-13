@@ -149,10 +149,10 @@ main {
         }
 
         .map {
-            flex: 1;
+            
             display: flex;
             flex-wrap: wrap;
-            align-items: center;
+            align-items: start;
             padding: 5px;
             flex-direction: column;
             text-align: center;
@@ -160,9 +160,9 @@ main {
     }
 
     .formulario-cv {
-        flex: 1;
+        
         display: block;
-        align-items: start;
+        align-items: left;
         padding: 5px;
         flex-direction: column;
         text-align: center;
@@ -172,13 +172,14 @@ main {
             margin-bottom: 5px;
             color: white;
             background-color: black;
+            align-items: start;
         }
 
         input {
             width: 100%;
             margin-bottom: 10px;
             box-sizing: border-box;
-
+            align-items: start;
         }
 
         form {

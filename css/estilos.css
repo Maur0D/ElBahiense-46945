@@ -200,18 +200,16 @@ main .contacto {
     color: black;
     font-size: 15px; }
   main .contacto .map {
-    flex: 1;
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
+    align-items: start;
     padding: 5px;
     flex-direction: column;
     text-align: center; }
 
 main .formulario-cv {
-  flex: 1;
   display: block;
-  align-items: start;
+  align-items: left;
   padding: 5px;
   flex-direction: column;
   text-align: center; }
@@ -219,11 +217,13 @@ main .formulario-cv {
     display: block;
     margin-bottom: 5px;
     color: white;
-    background-color: black; }
+    background-color: black;
+    align-items: start; }
   main .formulario-cv input {
     width: 100%;
     margin-bottom: 10px;
-    box-sizing: border-box; }
+    box-sizing: border-box;
+    align-items: start; }
   main .formulario-cv form {
     max-width: 400px;
     margin: 0 auto; }
@@ -329,15 +329,86 @@ main .elb {
   color: azure;
   font-weight: 100; }
 
+/*!------Index-----*/
 @media screen and (max-width: 865px) {
   header {
     flex-direction: column;
     position: static;
-    margin: 0; } }
-
-@media screen and (max-width: 865px) {
+    margin: 0; }
   .hero h3 {
     font-size: 15px; } }
+
+@media screen and (max-width: 560px) {
+  header .nav ul {
+    flex-direction: column; }
+  .fixed {
+    display: none; } }
+
+@media only screen and (max-width: 420px) {
+  body {
+    font-size: 14px; }
+    body .bus {
+      display: none; } }
+
+@media screen and (max-width: 410px) {
+  .hero {
+    font-size: 12px; }
+  .bus1 {
+    display: none; } }
+
+@media only screen and (max-width: 350px) {
+  body {
+    font-size: 14px; }
+  .header ul {
+    flex-direction: column; }
+  .nosotrosContenedor {
+    flex-direction: column; }
+  .formulario-cv {
+    width: 100%;
+    box-sizing: border-box; }
+    .formulario-cv iframe {
+      width: 100%; } }
+
+/*!------Nosotros-----*/
+@media screen and (max-width: 550px) {
+  .carousel-inner {
+    display: none; } }
+
+/*!------Contacto-----*/
+@media screen and (max-width: 950px) {
+  .mini {
+    background-image: url(../img/minibus.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; }
+    .mini .contenedorFlex {
+      flex-direction: column; } }
+
+@media screen and (max-width: 500px) {
+  .formulario-cv textarea {
+    width: 350px; } }
+
+/*!------Servicio-----*/
+@media (max-width: 1050px) {
+  .servicio-contenedor {
+    grid-template-columns: repeat(3, 33.3%); }
+    .servicio-contenedor div {
+      width: auto; } }
+
+@media (max-width: 850px) {
+  .servicio-contenedor {
+    grid-template-columns: repeat(2, 1fr); }
+    .servicio-contenedor div {
+      width: auto; }
+  .tercerItem {
+    display: none; } }
+
+@media (max-width: 550px) {
+  .servicio-contenedor {
+    grid-template-columns: 1fr; }
+    .servicio-contenedor div {
+      width: auto; } }
 
 * {
   margin: 0;

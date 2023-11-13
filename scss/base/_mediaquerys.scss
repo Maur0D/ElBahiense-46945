@@ -1,12 +1,140 @@
+/*!------Index-----*/
 @media screen and (max-width:865px) {
     header {
         flex-direction: column;
         position: static;
         margin: 0;
     }
-}
-@media screen and (max-width:865px){
-    .hero h3 {
-        font-size: 15px;
+
+    .hero {
+        h3 {
+            font-size: 15px;
+        }
     }
+}
+
+@media screen and (max-width:560px) {
+    header {
+        .nav {
+            ul {
+                flex-direction: column;
+
+            }
+
+        }
+
+    }
+
+    .fixed {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 420px) {
+    body {
+        font-size: 14px;
+
+        .bus {
+            display: none;
+        }
+    }
+}
+
+@media screen and (max-width: 410px) {
+    .hero {
+        font-size: 12px;
+    }
+
+    .bus1 {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    body {
+        font-size: 14px;
+    }
+
+    .header {
+        ul {
+            flex-direction: column;
+        }
+    }
+
+    .nosotrosContenedor {
+        flex-direction: column;
+    }
+
+    .formulario-cv {
+        width: 100%;
+        box-sizing: border-box;
+
+        iframe {
+            width: 100%;
+        }
+    }
+}
+
+/*!------Nosotros-----*/
+@media screen and (max-width: 550px) {
+    .carousel-inner {
+        display: none;
+    }
+}
+
+/*!------Contacto-----*/
+@media screen and (max-width:950px) {
+    .mini {
+        background-image: url(../img/minibus.jpeg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+
+        .contenedorFlex {
+            flex-direction: column;
+        }
+    }
+}
+
+@media screen and (max-width:500px) {
+    .formulario-cv textarea {
+        width: 350px;
+    }
+}
+
+/*!------Servicio-----*/
+@media (max-width: 1050px) {
+    .servicio-contenedor {
+        grid-template-columns: repeat(3, 33.3%);
+
+        div {
+            width: auto;
+        }
+    }
+}
+
+@media (max-width: 850px) {
+    .servicio-contenedor {
+        grid-template-columns: repeat(2, 1fr);
+
+        div {
+            width: auto;
+        }
+    }
+
+    .tercerItem {
+        display: none;
+    }
+}
+
+@media (max-width: 550px) {
+    .servicio-contenedor {
+        grid-template-columns: 1fr;
+
+        div {
+            width: auto;
+        }
+    }
+
 }
