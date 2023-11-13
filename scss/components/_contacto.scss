@@ -1,0 +1,55 @@
+.mini {
+    background-image: url(../img/minibus.jpeg);
+    background-image: cover;
+    background-repeat: no-repeat;
+
+    .exp {
+        color: black;
+        text-decoration:solid;
+        background-color: beige;
+        text-align: center;
+
+
+        p {
+            color: black;
+            background-color: beige;
+            font-style: italic;
+        }
+    }
+}
+
+form {
+    .contenedorFlex {
+        display: flex;
+
+    }
+
+    .formulario-cv {
+        display: block;
+        align-items: start;
+        padding: 5px;
+        flex-direction: column;
+        text-align: center;
+
+        label {
+            @extend %resaltar
+        }
+    }
+
+    .map {
+        @include flex(flex, column, center);
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        padding: 5px;
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+h2 {
+    .resaltar {
+        @extend %resaltar;
+    }
+    
+}

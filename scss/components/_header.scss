@@ -6,6 +6,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    z-index: 1;
 
     h1 {
         height: auto;
@@ -27,7 +28,25 @@ header {
             display: flex;
 
             li {
+                
+                display: inline-block;
+                margin: 5px 10px 5px 10px;
+
+                &:first-letter {
+                    color: rgb(215, 24, 24);
+                    font-style: italic;
+                    font-size: larger;
+                }
+
+                
+
+
+
                 a {
+                    &:hover {
+                        background-color: beige;
+                        color: black;
+                    }
                     text-decoration: none;
                     color: beige;
 

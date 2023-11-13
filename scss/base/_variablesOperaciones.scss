@@ -1,0 +1,31 @@
+
+
+
+
+
+$colores:
+blue,
+beige,
+white,
+black;
+
+
+
+
+
+
+
+
+@mixin flex ($flex, $flex-dir, $align){
+    display: $flex;
+    flex-direction: $flex-dir;
+    align-items: $align;
+}
+
+%map{
+    flex: 1;
+}
+
+%resaltar{
+    background-color: white;
+}
