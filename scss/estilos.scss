@@ -1,11 +1,11 @@
-@import "./base/variablesOperaciones";
-@import "./base/generales";
 @import "./components/header";
-@import "./components/contacto";
-@import "./components/footer";
+@import "./components/reset";
+@import "./base/generales";
+@import "./base/variablesOperaciones";
 @import "./components/main";
+@import "./components/contacto";
 @import "./components/nosotros";
 @import "./components/preguntasfrecuentes";
 @import "./components/servicio";
 @import "./base/mediaquerys";
-@import "./components/reset"
+@import "./components/footer";

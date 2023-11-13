@@ -1,16 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Young+Serif&display=swap");
-form .formulario-cv label, h2 .resaltar {
-  background-color: white; }
-
-/*!-----RESET----*/
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box; }
-
-body {
-  font-family: 'Young Serif', serif; }
-
 header {
   background-color: black;
   padding: 15px;
@@ -46,57 +34,31 @@ header {
           background-color: beige;
           color: black; }
 
-.mini {
-  background-image: url(../img/minibus.jpeg);
-  background-image: cover;
-  background-repeat: no-repeat; }
-  .mini .exp {
-    color: black;
-    text-decoration: solid;
-    background-color: beige;
-    text-align: center; }
-    .mini .exp p {
-      color: black;
-      background-color: beige;
-      font-style: italic; }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
 
-form .contenedorFlex {
-  display: flex; }
+body {
+  font-family: 'Young Serif', serif; }
 
-form .formulario-cv {
-  display: block;
-  align-items: start;
-  padding: 5px;
-  flex-direction: column;
-  text-align: center; }
+/*!-----RESET----*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
 
-form .map {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  padding: 5px;
-  flex-direction: column;
-  text-align: center; }
+body {
+  font-family: 'Young Serif', serif; }
 
-footer {
-  background-color: beige;
-  padding: 40px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center; }
-  footer h2 {
-    color: black;
-    font-size: 30px;
-    font-weight: 300; }
+form .formulario-cv label, h2 .resaltar {
+  background-color: white; }
 
 main .hero {
   text-align: center;
   width: 100%;
   height: 500px;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.434), rgba(0, 0, 0, 0.525)), url("../img/Combifrente.jpeg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.434), rgba(0, 0, 0, 0.525)), url("../img/combifrente.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -233,6 +195,41 @@ main .fixed {
   bottom: 50px;
   right: 20px;
   padding: 50px; }
+
+.mini {
+  background-image: url(../img/minibus.jpeg);
+  background-image: cover;
+  background-repeat: no-repeat; }
+  .mini .exp {
+    color: black;
+    text-decoration: solid;
+    background-color: beige;
+    text-align: center; }
+    .mini .exp p {
+      color: black;
+      background-color: beige;
+      font-style: italic; }
+
+form .contenedorFlex {
+  display: flex; }
+
+form .formulario-cv {
+  display: block;
+  align-items: start;
+  padding: 5px;
+  flex-direction: column;
+  text-align: center; }
+
+form .map {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 5px;
+  flex-direction: column;
+  text-align: center; }
 
 .noso {
   background-color: beige; }
@@ -410,10 +407,13 @@ main .elb {
     .servicio-contenedor div {
       width: auto; } }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box; }
-
-body {
-  font-family: 'Young Serif', serif; }
+footer {
+  background-color: beige;
+  padding: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  footer h2 {
+    color: black;
+    font-size: 30px;
+    font-weight: 300; }
