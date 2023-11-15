@@ -5,7 +5,7 @@
 
     .exp {
         color: black;
-        text-decoration:solid;
+        text-decoration: solid;
         background-color: beige;
         text-align: center;
 
@@ -32,7 +32,7 @@ form {
         text-align: center;
 
         label {
-            @extend %resaltar
+            @extend %resaltar;
         }
     }
 
@@ -45,11 +45,17 @@ form {
         flex-direction: column;
         text-align: center;
     }
+
+    p {
+        .resaltar {
+            @extend %resaltar;
+        }
+    }
 }
 
 h2 {
     .resaltar {
         @extend %resaltar;
     }
-    
+
 }
