@@ -34,22 +34,24 @@ header {
       color: #d71818;
       font-style: italic;
       font-size: larger; }
-  header nav ul {
-    list-style: none;
-    display: flex; }
-    header nav ul li {
-      display: inline-block;
-      margin: 5px 10px 5px 10px; }
-      header nav ul li:first-letter {
-        color: #d71818;
-        font-style: italic;
-        font-size: larger; }
-      header nav ul li a {
-        text-decoration: none;
-        color: beige; }
-        header nav ul li a:hover {
-          background-color: beige;
-          color: black; }
+  header nav {
+    background-color: black; }
+    header nav ul {
+      list-style: none;
+      display: flex; }
+      header nav ul li {
+        display: inline-block;
+        margin: 5px 10px 5px 10px; }
+        header nav ul li:first-letter {
+          color: #d71818;
+          font-style: italic;
+          font-size: larger; }
+        header nav ul li a {
+          text-decoration: none;
+          color: beige; }
+          header nav ul li a:hover {
+            background-color: darkblue;
+            color: black; }
 
 form .formulario-cv label, form p .resaltar, h2 .resaltar {
   background-color: white; }
@@ -170,10 +172,10 @@ main .contacto {
     text-align: center; }
 
 main .formulario-cv {
-  display: block;
-  align-items: left;
+  display: flex;
+  align-items: right;
   padding: 5px;
-  flex-direction: column;
+  flex-direction: row;
   text-align: center; }
   main .formulario-cv label {
     display: block;

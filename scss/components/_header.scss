@@ -23,6 +23,8 @@ header {
     }
 
     nav {
+        
+        background-color: black;
         ul {
             list-style: none;
             display: flex;
@@ -44,7 +46,7 @@ header {
 
                 a {
                     &:hover {
-                        background-color: beige;
+                        background-color: darkblue;
                         color: black;
                     }
                     text-decoration: none;

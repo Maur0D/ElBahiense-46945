@@ -161,10 +161,10 @@ main {
 
     .formulario-cv {
         
-        display: block;
-        align-items: left;
+        display: flex;
+        align-items: right;
         padding: 5px;
-        flex-direction: column;
+        flex-direction: row;
         text-align: center;
 
         label {
