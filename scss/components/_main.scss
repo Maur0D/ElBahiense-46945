@@ -70,7 +70,8 @@ main {
                     gap: 15px;
                     border-radius: 10px;
                     transition: 1s;
-                    &:hover{
+
+                    &:hover {
                         transform: scale(1.1);
                     }
                 }
@@ -149,7 +150,7 @@ main {
         }
 
         .map {
-            
+
             display: flex;
             flex-wrap: wrap;
             align-items: start;
@@ -160,7 +161,7 @@ main {
     }
 
     .formulario-cv {
-        
+
         display: flex;
         align-items: right;
         padding: 5px;
