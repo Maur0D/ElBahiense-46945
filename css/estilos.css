@@ -50,8 +50,7 @@ header {
           text-decoration: none;
           color: beige; }
           header nav ul li a:hover {
-            background-color: darkblue;
-            color: black; }
+            background-color: black; }
 
 form .formulario-cv label, form p .resaltar, h2 .resaltar {
   background-color: white; }
@@ -111,7 +110,7 @@ main .nosotros {
       transition: 1s; }
       main .nosotros .nosotrosContenedor .bus img:hover,
       main .nosotros .nosotrosContenedor .bus1 img:hover {
-        transform: scale(1.1); }
+        transform: scale(0.2); }
 
 main .servicios {
   background-color: beige; }

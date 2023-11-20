@@ -8,7 +8,6 @@ main {
         background-size: cover;
         background-position: center;
         background-attachment: fixed;
-
         h2 {
             color: rgb(3, 29, 134);
             background-color: beige;
@@ -31,6 +30,7 @@ main {
             padding: 70px;
             margin: 20px;
             color: white;
+            
         }
 
     }
@@ -71,8 +71,8 @@ main {
                     border-radius: 10px;
                     transition: 1s;
 
-                    &:hover {
-                        transform: scale(1.1);
+                    &:hover{
+                        transform: scale(0.2);
                     }
                 }
 
