@@ -3,6 +3,8 @@
 
 - 🔭 I’m currently working on [El Bahiense Tour](https://github.com/Maur0D/ElBahiense-46945.git)
 
+  Una Empresa familiar dedica al servicio del transporte de pasajeros de la ciudad de Bahia Blanca.
+  Queriamos mostrar los servicios que incluye la empresa, un poco de sus unidades, quienes son en base a la empresa y la familia y conductores que dia a dia le dedica su vida a la empresa.
 - 🌱 **Web Development**
 
 <h3 align="left">Connect with me:</h3>
