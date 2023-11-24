@@ -52,7 +52,7 @@ header {
           header nav ul li a:hover {
             background-color: black; }
 
-form .formulario-cv label, form p .resaltar, h2 .resaltar {
+main .contacto h4 span, form .formulario-cv label, form p .resaltar, h2 .resaltar {
   background-color: white; }
 
 main .hero {
@@ -110,7 +110,7 @@ main .nosotros {
       transition: 1s; }
       main .nosotros .nosotrosContenedor .bus img:hover,
       main .nosotros .nosotrosContenedor .bus1 img:hover {
-        transform: scale(0.2); }
+        transform: scale(1.1); }
 
 main .servicios {
   background-color: beige; }
@@ -190,6 +190,9 @@ main .formulario-cv {
   main .formulario-cv form {
     max-width: 400px;
     margin: 0 auto; }
+  main .formulario-cv .map-index {
+    display: flex;
+    flex-direction: column; }
 
 main .fixed {
   position: fixed;
@@ -211,26 +214,43 @@ main .fixed {
       background-color: beige;
       font-style: italic; }
 
-form .contenedorFlex {
-  display: flex; }
-
-form .formulario-cv {
-  display: block;
-  align-items: start;
-  padding: 5px;
-  flex-direction: column;
-  text-align: center; }
-
-form .map {
+form {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  padding: 5px;
-  flex-direction: column;
-  text-align: center; }
+  max-width: 800px;
+  margin: 0 auto;
+  flex: 1; }
+  form .contenedorFlex {
+    display: flex;
+    justify-content: space-between;
+    flex: 1; }
+  form .formulario-cv {
+    display: block;
+    align-items: start;
+    flex-direction: column;
+    text-align: center;
+    flex-wrap: wrap;
+    flex: 1;
+    padding: 30px; }
+    form .formulario-cv label {
+      display: block;
+      margin-bottom: 5px;
+      color: white;
+      background-color: black; }
+    form .formulario-cv input {
+      width: 100%;
+      margin-bottom: 10px; }
+  form .map {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 10px;
+    flex-wrap: wrap; }
+  form p .resaltar {
+    flex-direction: column; }
 
 .noso {
   background-color: beige; }
@@ -327,6 +347,17 @@ main .elb {
   color: azure;
   font-weight: 100; }
 
+footer {
+  background-color: beige;
+  padding: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  footer h2 {
+    color: black;
+    font-size: 30px;
+    font-weight: 300; }
+
 /*!------Index-----*/
 @media screen and (max-width: 865px) {
   header {
@@ -335,6 +366,10 @@ main .elb {
     margin: 0; }
   .hero h3 {
     font-size: 15px; } }
+
+@media screen and (max-width: 620px) {
+  .contacto .formulario-cv .map-index {
+    display: none; } }
 
 @media screen and (max-width: 560px) {
   header .nav ul {
@@ -370,6 +405,8 @@ main .elb {
 /*!------Nosotros-----*/
 @media screen and (max-width: 550px) {
   .carousel-inner {
+    display: none; }
+  .parrafo {
     display: none; } }
 
 /*!------Contacto-----*/
@@ -407,14 +444,3 @@ main .elb {
     grid-template-columns: 1fr; }
     .servicio-contenedor div {
       width: auto; } }
-
-footer {
-  background-color: beige;
-  padding: 40px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center; }
-  footer h2 {
-    color: black;
-    font-size: 30px;
-    font-weight: 300; }

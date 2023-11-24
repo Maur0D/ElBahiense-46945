@@ -72,7 +72,7 @@ main {
                     transition: 1s;
 
                     &:hover{
-                        transform: scale(0.2);
+                        transform: scale(1.1);
                     }
                 }
 
@@ -140,6 +140,9 @@ main {
             font-size: 20px;
             text-align: left;
             padding: 15px;
+            span{
+                @extend %resaltar;
+            }
         }
 
         .resaltar {
@@ -188,7 +191,12 @@ main {
             margin: 0 auto;
 
         }
+        .map-index{
+            display: flex;
+            flex-direction: column;
+        }
     }
+    
 
     .fixed {
         position: fixed;

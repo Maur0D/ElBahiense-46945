@@ -19,36 +19,55 @@
 }
 
 form {
+    display: flex;
+    max-width: 800px;
+    margin: 0 auto;
+    flex: 1;
     .contenedorFlex {
         display: flex;
-
+        justify-content: space-between;
+        flex: 1;
     }
 
     .formulario-cv {
         display: block;
-        align-items: start;
-        padding: 5px;
+        align-items: start;  
         flex-direction: column;
         text-align: center;
-
+        flex-wrap: wrap;
+        flex: 1;
+        padding: 30px; 
+        
         label {
             @extend %resaltar;
+            display: block;
+            margin-bottom: 5px;
+            color: white;
+            background-color: black;
         }
+        input{
+            width: 100%;
+            margin-bottom: 10px;
     }
+}
+
 
     .map {
         @include flex(flex, column, center);
         display: flex;
+        flex: 1;
         flex-wrap: wrap;
         align-items: center;
-        padding: 5px;
-        flex-direction: column;
-        text-align: center;
+        padding: 10px;
+        flex-wrap: wrap;
+        
+
     }
 
     p {
         .resaltar {
             @extend %resaltar;
+            flex-direction: column;
         }
     }
 }
